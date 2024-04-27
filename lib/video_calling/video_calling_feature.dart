@@ -12,6 +12,7 @@ class _VideoCallingFeatureState extends State<VideoCallingFeature> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.yellowAccent,
         title: Text("Video Calling"),
       ),
     );
