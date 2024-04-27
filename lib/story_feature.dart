@@ -14,10 +14,21 @@ class _StoryFeatureState extends State<StoryFeature> {
       appBar: AppBar(
         title: const Text("Story Feature"),
       ),
-      body: const Column(
+      body:  Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
-        children: [Center(child: Text("Story Feature"))],
+        children: [
+
+          Center(child: Text("Story Feature")),
+
+        Container(
+          height: 100,
+          width: 100,
+          color: Colors.blue,
+          child: Center(child: Text("Hello World")),
+
+        )
+        ],
       ),
     );
   }
