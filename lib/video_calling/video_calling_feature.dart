@@ -13,7 +13,7 @@ class _VideoCallingFeatureState extends State<VideoCallingFeature> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.yellowAccent,
-        title: Text("Video Calling"),
+        title: Text("Video"),
       ),
     );
   }
