@@ -19,13 +19,13 @@ class _StoryFeatureState extends State<StoryFeature> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
 
-          Center(child: Text("Story Feature")),
+          const Center(child: Text("Story Feature")),
 
         Container(
           height: 100,
           width: 100,
           color: Colors.blue,
-          child: Center(child: Text("Hello World")),
+          child: const Center(child: Text("Hello World")),
 
         )
         ],
