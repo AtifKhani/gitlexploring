@@ -35,7 +35,8 @@ Navigator.push(context, MaterialPageRoute(builder:(_)=>const HomeScreen()));
               width: 300,
               color: Colors.red,
             ),
-          )
+          ),
+
         ],
       ),
     );
