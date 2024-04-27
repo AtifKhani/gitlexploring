@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gitlexploring/video_calling/video_calling_feature.dart';
 
 class StoryFeature extends StatefulWidget {
   const StoryFeature({super.key});
@@ -14,20 +15,25 @@ class _StoryFeatureState extends State<StoryFeature> {
       appBar: AppBar(
         title: const Text("Story Feature"),
       ),
-      body:  Column(
+      body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-
           const Center(child: Text("Story Feature")),
-
-        Container(
-          height: 100,
-          width: 100,
-          color: Colors.blue,
-          child: const Center(child: Text("Hello World")),
-
-        )
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (_) => const VideoCallingFeature()));
+            },
+            child: Container(
+              height: 100,
+              width: 100,
+              color: Colors.blue,
+              child: const Center(child: Text("Hello World")),
+            ),
+          )
         ],
       ),
     );
